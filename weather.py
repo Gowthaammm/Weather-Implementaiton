@@ -1,8 +1,7 @@
 import math
 
-a = float(input("Enter value for a: "))
-b = float(input("Enter value for b: "))
-c = float(input("Enter value for c: "))
+with open('input.txt', 'r') as file:
+    a, b, c = map(float, file.readline().split())
 
 D = b**2 - 4*a*c
 
